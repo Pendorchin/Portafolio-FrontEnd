@@ -1,78 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
 
 </head>
 <body>
+  
+<header class="hero">
 
+    <nav class="nav">
 
-    <header>
-      <div class="container">
-        <p class="logo">Mi Curriculum</p>
-        <nav>
-            <a href="#hero">Inicio</a>
-            <a href="#yo">Yo</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#trabajos">Trabajos</a>
-        </nav> 
+      <div id="nav-logo" class="nav-logo"><img src="/img/logo.svg"></div>
+
+      <div id="menu-icons" class="menu-icons">
+
+        <img src="img/menu-opened.svg"  id="menu-opened" class="menu-opened">
+        <img src="img/menu-closed.svg" id="menu-closed" class="menu-closed">
+
       </div>
-    </header>
-  
 
-  <section id="hero">
-    <h1>Bienvenidos a mi Curriculum</h1>
-  </section>
+      <div class="nav-menu">
 
+        <ul id="menu-list" class="menu-list">
+          <li class="menu-item">
+            <a href="#hero" class="menu-link">Inicio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#sobre-mi" class="menu-link">Sobre Mi</a>
+          </li>
+          <li class="menu-item">
+            <a href="#skills" class="menu-link">Habilidades</a>
+          </li>
+          <li class="menu-item">
+            <a href="#proyectos" class="menu-link">Proyectos</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contacto" class="menu-link">Contacto</a>
+          </li>
+          <li class="menu-item">
+            <button class="menu-link login-button" type="button">Login</button>
+          </li>
 
-  <section id="yo">
-    <div class="container">
-      <h2>Yo</h2>
+        </ul>
+        
+      </div>
 
-        <div class="img-cointainer">
-          <img src="img/" alt="imagen de mi">
-        </div>
-  
-      <h2>Sobre Mi</h2>
-      <p>
-        Hola! Mi nombre es Stangafero, Eric David, vivo en Santa Fe, Argentina y tengo 18 años.
-      </p>
-      <h2>Educación</h2>
-      <h2>Contacto</h2>
-      <p>
-        Mail: <a href="www.gmail.com">estangafe@gmail.com</a>  <br> Numero de Teléfono: +54 342 595-0884
-      </p>
-  
-    </div>
-  </section>
+    </nav>
 
-
-  <section id="experiencia">
-    <h2>Experiencia</h2>
-  </section>
-
-
-  <section id="trabajos">
-    <h2>Trabajos</h2>
-  </section>
-
-
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-  </section>
-
-
-  <footer>
-    <div class="cointainer">
-      <p>&copy; Stangafero, Eric David 2023</p>
-    </div>
+    <section id="hero-container">
+      
+      <img src="/img/Eric.jpeg" alt="Foto de Stangafero, Eric David" class="hero-img">
+      <h1 class="hero-name">Stangafero, Eric David</h1>
+      <h1 class="hero-titulo">Desarrollador Web Full Stack Jr</h1>
     
-  </footer>
+    </section>
 
+</header>
+
+
+
+<section id="sobre-mi">
+
+  <h2>Sobre Mi</h2>
+
+<div class="yo">
+  <p>¡Hola!, Bienvenido, soy Eric, apasionado por las tecnologias de las ramas de la computación, de la electricidad y de la mecánica.
+    Soy una persona con gran capacidad de adaptación a nuevos desafíos, creativo, dispuesto a aprender cosas nuevas, responsable, puntual, con tolerancia
+     al estrés y comprometido al trabajo.
+    En este caso, busco pulir mis habilidades profesionales como programador, y asi, desarrollarme como <strong>Full Stack Developer</strong>.</p>
+</div>
+
+<div class="educacion">
+    <h2>Educación</h2>
+
+    <img src="/img/logoeis.png" alt="Logo Escuela Industrial Superior" class="img-eis">
+    <p>Título Secundario: Técnico Mecánico Eléctrico | Escuela Industrial Superior (EIS) | 2017-2022</p>
+
+    <img src="/img/UTNlogo.png" alt="Logo Universidad Tecnologia Nacional" class="img-utn">
+    <p>Título Universitario: Ingeniero Eléctrico | Universidad Tecnologia Nacional (UTN) | 2023-(en progreso)</p>
+  </div>
+
+<div class="xp-laboral">
+  <h2>Experiencia Laboral</h2>
+  <img src="/img/logotoyota-r.png" alt="Logo de la Empresa Toyota" class="img-toyota">
+  <p>Práctica Profesional en Empresa: Amiun, Toyota (Santa Fe Capital) | 05/2022-08/2022</p>
+</div>
+ 
+</section>
+
+
+
+<section id="skills">
+
+  <h2>Habilidades</h2>
+
+  <div class="hard-skills">
+
+    <h3>Hard Skills</h3>
+
+  </div>
+
+  <div class="soft-skills">
+
+    <h3>Soft Skills</h3>
+
+  </div>
+
+</section>
+
+
+
+<section id="proyectos">
+
+  <h2>Proyectos</h2>
+
+</section>
+
+
+
+<section id="contacto">
+
+  <h2>Contacto</h2>
+
+</section>
+
+
+
+<footer>
+
+  <p>© Stangafero, Eric David 2023</p>
+
+</footer>
+
+<script src="/index.js"></script>
 
 </body>
 </html>

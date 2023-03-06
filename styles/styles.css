@@ -1,86 +1,140 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-html {
-  scroll-behavior: smooth;
+img {
+  box-sizing: content-box;
 }
 
-h1 { font-size: 3.2em;}
-h2 { font-size: 2.7em;}
-h3 { font-size: 2em;}
-p { font-size:1.25em;}
+* {
+  font-family: 'Poppins', sans-serif;
+}
 
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+:root {
+  --color: #1F1F20;
 }
 
 .container {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: none;
 }
 
-header {
-  background-color: rgba(194, 189, 189, 0.5);
-
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient( 
+    180deg,
+    #0000008c 0%,
+    #0000008c 100%
+    ),
+    url(/img/computer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  background-attachment: fixed;
 }
 
-header .container{
+nav {
+  background-color: var(--color);
+  height: 10vh;
+}
+
+.nav-logo {
+  position: absolute;
+  top: -12px;
+} 
+
+.menu-icons {
+  position: absolute;
+  /* hace que los iconos de menu pertenezcan al menu */  
+  top: 1.6rem;
+  right: 3em;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #555759;
+  border-radius: 8px;
+  height: 50px;
+}
+
+.menu-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 6vh;
+  background-color: var(--color);
+  transition: transform 0.3s;
+  transform: translateY(-100%)
 }
 
-header .logo {
-  font-weight: bold;
-  color: rgb(0, 0, 0);;
-  font-size: 0.5em;
+.menu-list--show{
+  transform: translateY(0);
 }
 
-header nav{
+.menu-icon--hidden {
+  display: none;
+}
+
+.menu-icon--show {
   display: flex;
 }
 
-header a{
-  padding: 6px 15px;
-  text-decoration: none;
-  font-weight: bold;
+.menu-item {
+  padding: 1em;
+}
+
+.menu-link {
   color: white;
-  background-color: rgb(0, 8, 78);
-  border-radius: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-header a:hover {
-  color:rgb(0, 119, 255);
-}
-
-#hero {
+#hero-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
-  height: 90vh;
-  color:rgb(255, 255, 255);
-  background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-  )
-  ,url(/img/Ingeniero-Electricista.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
-#yo .container {
-  text-align: center;
-  padding: 200px 12px;
+.hero-img {
+  width: 75%;
+  padding-top: 200px;
+  padding-bottom: 20px;
 }
 
-#yo h2 {
-  margin-top:  px;
+@media screen and (min-width: 768px){
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav-logo {
+    
+  } 
+
+  .menu-icons {
+    display: none;
+  }
+  
+  .menu-list {
+    flex-direction: row;
+    background-color: none;
+    transform: translateY(0);
+    transition: transform 0s;
+  }
+  
 }
