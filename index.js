@@ -1,19 +1,11 @@
-const menuIconElement = document.getElementById("menu-icons");
-const menuListElement = document.getElementById("menu-list");
+const menuIconsElement = document.getElementById("menu-icons");
+const menuListElement = document.getElementById("navbar-menu");
 const menuClosedElement = document.getElementById("menu-closed");
 const menuOpenedElement = document.getElementById("menu-opened");
 
-
-menuOpenedElement.classList.toggle("menu-icon--hidden");
-
-menuIconElement.addEventListener("click", () => {
-    menuListElement.classList.toggle("menu-list--show")
-    menuClosedElement.classList.toggle("menu-icon--hidden");
-    menuOpenedElement.classList.toggle("menu-icon--show");
+menuIconsElement.addEventListener("click", () => {
+    menuListElement.classList.toggle("navbar-menu--show")
+    menuClosedElement.classList.toggle("menu-icons--hidden");
+    menuOpenedElement.classList.toggle("menu-icons--show");
 });
 
-
-
-// const logoElement = document.getElementById("nav-logo"); //
-
-// logoElement.classList.toggle("menu-icon--hidden"); //

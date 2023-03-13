@@ -1,145 +1,275 @@
 <!DOCTYPE html>
 
 <html lang="es">
-<head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/png" />
+  </head>
 
-</head>
-<body>
-  
-<header class="hero">
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="logo"><img src="/img/logo.svg"/></div>
 
-    <nav class="nav">
-
-      <div id="nav-logo" class="nav-logo"><img src="/img/logo.svg"></div>
-
-      <div id="menu-icons" class="menu-icons">
-
-        <img src="img/menu-opened.svg"  id="menu-opened" class="menu-opened">
-        <img src="img/menu-closed.svg" id="menu-closed" class="menu-closed">
-
-      </div>
-
-      <div class="nav-menu">
-
-        <ul id="menu-list" class="menu-list">
-          <li class="menu-item">
-            <a href="#hero" class="menu-link">Inicio</a>
-          </li>
-          <li class="menu-item">
-            <a href="#sobre-mi" class="menu-link">Sobre Mi</a>
-          </li>
-          <li class="menu-item">
-            <a href="#skills" class="menu-link">Habilidades</a>
-          </li>
-          <li class="menu-item">
-            <a href="#proyectos" class="menu-link">Proyectos</a>
-          </li>
-          <li class="menu-item">
-            <a href="#contacto" class="menu-link">Contacto</a>
-          </li>
-          <li class="menu-item">
-            <button class="menu-link login-button" type="button">Login</button>
-          </li>
-
-        </ul>
+        <div id="menu-icons" class="menu-icons">
+          <img src="img/menu-opened.svg" id="menu-opened" class="menu-opened" />
+          <img src="img/menu-closed.svg" id="menu-closed" class="menu-closed" />
+        </div>
         
+        <ul id="navbar-menu" class="navbar-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#sobre-mi" class="nav-link">Sobre Mi</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Habilidades</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-link login-button" type="button">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-container">
+        <img
+          src="/img/Eric.jpeg"
+          alt="Foto de Stangafero, Eric David"
+          class="hero-img"
+        />
+        <h1 class="hero-name">Stangafero, Eric David</h1>
+        <h1 class="hero-devjr">Desarrollador Web Full Stack Jr</h1>
       </div>
-
-    </nav>
-
-    <section id="hero-container">
-      
-      <img src="/img/Eric.jpeg" alt="Foto de Stangafero, Eric David" class="hero-img">
-      <h1 class="hero-name">Stangafero, Eric David</h1>
-      <h1 class="hero-titulo">Desarrollador Web Full Stack Jr</h1>
-    
     </section>
 
-</header>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="container">
+        <h2 class="title">
+          Sobre Mi
+          <div class="line"></div>
+        </h2>
+  
+        <p class="yo">
+          ¡Hola!, Bienvenido, soy Eric, apasionado por las tecnologias de las
+          ramas de la computación, de la electricidad y de la mecánica. Soy una
+          persona con gran capacidad de adaptación a nuevos desafíos, creativo,
+          dispuesto a aprender cosas nuevas, responsable, puntual, con tolerancia
+          al estrés y comprometido al trabajo. En este caso, busco pulir mis
+          habilidades profesionales como programador, y asi, desarrollarme como
+          <strong>Full Stack Developer</strong>.
+        </p>
+      </div>
+    </section>
 
 
+    <section class="educacion">
+      <div class="container">
+        <h2 class="title">
+          Educación
+          <div class="line"></div>
+        </h2>
 
-<section id="sobre-mi">
+        <div class="item">
+          <img
+          src="/img/logoeis.png"
+          alt="Logo Escuela Industrial Superior"
+          class="img img-eis"
+        />
+        <p>
+          <span class="item-span">Título Secundario</span>   Técnico Mecánico Eléctrico | Escuela Industrial
+          Superior (EIS) | 2017-2022
+        </p>
+        </div>
+        
+        <div class="item">
+          <img
+            src="/img/UTNlogo.png"
+            alt="Logo Universidad Tecnologia Nacional"
+            class="img img-utn"
+          />
+          <p>
+            <span class="item-span">Título Universitario</span> Ingeniero Eléctrico | Universidad Tecnologia
+            Nacional (UTN) | 2023-(en progreso)
+          </p>
+        </div>
 
-  <h2>Sobre Mi</h2>
-
-<div class="yo">
-  <p>¡Hola!, Bienvenido, soy Eric, apasionado por las tecnologias de las ramas de la computación, de la electricidad y de la mecánica.
-    Soy una persona con gran capacidad de adaptación a nuevos desafíos, creativo, dispuesto a aprender cosas nuevas, responsable, puntual, con tolerancia
-     al estrés y comprometido al trabajo.
-    En este caso, busco pulir mis habilidades profesionales como programador, y asi, desarrollarme como <strong>Full Stack Developer</strong>.</p>
-</div>
-
-<div class="educacion">
-    <h2>Educación</h2>
-
-    <img src="/img/logoeis.png" alt="Logo Escuela Industrial Superior" class="img-eis">
-    <p>Título Secundario: Técnico Mecánico Eléctrico | Escuela Industrial Superior (EIS) | 2017-2022</p>
-
-    <img src="/img/UTNlogo.png" alt="Logo Universidad Tecnologia Nacional" class="img-utn">
-    <p>Título Universitario: Ingeniero Eléctrico | Universidad Tecnologia Nacional (UTN) | 2023-(en progreso)</p>
-  </div>
-
-<div class="xp-laboral">
-  <h2>Experiencia Laboral</h2>
-  <img src="/img/logotoyota-r.png" alt="Logo de la Empresa Toyota" class="img-toyota">
-  <p>Práctica Profesional en Empresa: Amiun, Toyota (Santa Fe Capital) | 05/2022-08/2022</p>
-</div>
- 
-</section>
-
-
-
-<section id="skills">
-
-  <h2>Habilidades</h2>
-
-  <div class="hard-skills">
-
-    <h3>Hard Skills</h3>
-
-  </div>
-
-  <div class="soft-skills">
-
-    <h3>Soft Skills</h3>
-
-  </div>
-
-</section>
+        <div class="item">
+          <img
+            src="/img/APLogo-20-20.png"
+            alt="Logo Argentina Programa"
+            class="img img-ap"
+          />
+          <p>
+            <span class="item-span">Cursos</span> Full Stack Developer Jr. | Argentina Programa | 2022-2023
+          </p>
+        </div>       
+      </div>
+    </section>
 
 
+    <section class="xp-laboral">
+      <div class="container">
+        <h2 class="title">
+          Experiencia Laboral
+          <div class="line"></div>
+        </h2>
+        <div class="item">
+          <img
+            src="/img/logotoyota-r.png"
+            alt="Logo de la Empresa Toyota"
+            class="img img-toyota"
+          />
+          <p>
+            <span class="item-span">Práctica Profesionalizante</span> Amiun, Toyota |
+            05/2022-08/2022
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section id="proyectos">
 
-  <h2>Proyectos</h2>
+    <section id="skills">
+      <div class="container">
+        <h2>Habilidades</h2>
 
-</section>
+        <div class="skill-container">
+          <div class="hard-skills">
+            <h3>Hard Skills</h3>
 
+            <div class="skill">
+              <img src="img/Iconos/html.svg">
+              <span>HTML</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
+            <div class="skill">
+              <img src="img/Iconos/css.svg">
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
-<section id="contacto">
+            <div class="skill">
+              <img src="img/Iconos/javascript.svg">
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
-  <h2>Contacto</h2>
+            <div class="skill">
+              <img src="img/Iconos/typescript.svg">
+              <span>TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="soft-skills">
+            <h3>Soft Skills</h3>
 
-</section>
+            <div class="skill">
+              <img src="img/Iconos/trip.svg">
+              <span>Resolución de Problemas</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
+            <div class="skill">
+              <img src="img/Iconos/graduation.svg">
+              <span>Profesional</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
+            <div class="skill">
+              <img src="img/Iconos/book.svg">
+              <span>Autodidacta?</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
-<footer>
+            <div class="skill">
+              <img src="img/Iconos/grupos.svg">
+              <span>Trabajo en Equipo</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
 
-  <p>© Stangafero, Eric David 2023</p>
+            <div class="skill">
+              <img src="img/Iconos/task.svg">
+              <span>Eficaz y Eficiente</span>
+              <div class="skill-bar">
+                <div class="skill-percent">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</footer>
+    <section id="proyectos">
+      <div class="container">
+        <h2>Proyectos</h2>
+      </div>
+    </section>
 
-<script src="/index.js"></script>
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+      </div>
+    </section>
 
-</body>
+    <footer>
+      <p>© Stangafero, Eric David 2023</p>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
 </html>
